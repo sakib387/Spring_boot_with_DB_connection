@@ -21,22 +21,9 @@ A Spring Boot application for managing a simple blogging system. This applicatio
 - **H2 Database**: In-memory database for testing.
 
 ## API Endpoints
+GET /api/blogs           - Fetch all blogs.
+GET /api/blogs/{blogId}  - Fetch a blog by ID.
+POST /api/blogs          - Create a new blog.
+PUT /api/blogs/{blogId}  - Update a blog.
+DELETE /api/blogs/{blogId} - Delete a blog.
 
-### 1. Fetch All Blogs
-**GET** `/api/blogs`  
-Returns a list of all blog posts.
-
-#### Response Example:
-```json
-[
-  {
-    "id": 1,
-    "title": "My First Blog",
-    "content": "This is the content of the first blog post."
-  },
-  {
-    "id": 2,
-    "title": "My Second Blog",
-    "content": "This is the content of the second blog post."
-  }
-]
