@@ -18,7 +18,7 @@ A Spring Boot application for managing a simple blogging system. This applicatio
 - **Spring Web**: For creating RESTful APIs.
 - **Spring Validation**: To validate request bodies.
 - **Spring Data JPA**: For database interactions.
-- **H2 Database**: In-memory database for testing.
+- **Postgresql Database**: postgresql used for store data.
 
 ## API Endpoints
 - GET /api/blogs           - Fetch all blogs.
