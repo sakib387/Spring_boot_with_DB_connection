@@ -31,6 +31,12 @@ public class Blog {
     public Blog() {
     }
 
+    public Blog(Long blogId, String blogTitle, String blogMessage) {
+        this.blogId = blogId;
+        this.blogTitle = blogTitle;
+        this.blogMessage = blogMessage;
+    }
+
     public void setBlogId(Long blogId) {
         this.blogId = blogId;
     }

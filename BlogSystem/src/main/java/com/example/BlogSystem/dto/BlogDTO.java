@@ -5,6 +5,11 @@ public class BlogDTO {
     private String blogTitle;
     private String blogMessage;
 
+    public BlogDTO(String blogTitle, String blogMessage) {
+        this.blogTitle = blogTitle;
+        this.blogMessage = blogMessage;
+    }
+
     public String getBlogTitle() {
         return blogTitle;
     }
