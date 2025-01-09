@@ -1,5 +1,6 @@
 package com.example.BlogSystem.controller;
 
+import com.example.BlogSystem.dto.BlogDTO;
 import com.example.BlogSystem.model.Blog;
 import com.example.BlogSystem.service.BlogService;
 import jakarta.validation.Valid;
@@ -36,7 +37,7 @@ public class BlogController {
     }
 
     @PutMapping("/{blogId}")
-    public ResponseEntity<Blog> updateBlog(@Valid @RequestBody Blog blog, @PathVariable Long blogId) {
+    public ResponseEntity<Blog> updateBlog(@Valid @RequestBody BlogDTO blog, @PathVariable Long blogId) {
         return new ResponseEntity<>(blogService.updateBlog(blog, blogId), HttpStatus.OK);
     }
 

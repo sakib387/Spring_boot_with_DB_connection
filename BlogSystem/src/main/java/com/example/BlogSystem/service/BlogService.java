@@ -1,5 +1,6 @@
 package com.example.BlogSystem.service;
 
+import com.example.BlogSystem.dto.BlogDTO;
 import com.example.BlogSystem.exception.AlreadyExistBlog;
 import com.example.BlogSystem.exception.BlogNotFoundException;
 import com.example.BlogSystem.model.Blog;
@@ -37,8 +38,7 @@ public class BlogService {
         return blogRepository.save(blog);
     }
 
-    public Blog updateBlog(Blog blog, Long blogId) {
-
+    public Blog updateBlog(BlogDTO blog, Long blogId) {
 
         return blogRepository.findById(blogId).map(bl -> {
             bl.setBlogTitle(blog.getBlogTitle());
